@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+<style>
+
+ body{
+
+       background-color: black;
+
+       background-image : url('2.jpg');
+       background-repeat: no-repeat;
+       background-size:cover;
+       text-align: center;
+                       font-family: 'Joti One', cursive;
+                        color:	snow;
+     }
+     input[type=text]:focus {
+    background-color: lightblue;
+}
+
+  form{
+
+     margin: 15% 30%;
+
+     background-color:black;
+
+     background-image : url('1.jpg');
+
+       background-repeat: no-repeat;
+       background-size:cover;
+
+     padding: 3% 10%;
+
+ }
+
+ </style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+      <form  action="register1.php" method="post" enctype="multipart/form-data" id="myform">
+
+
+          <b>  Phone No</b><br> <input type="text" name="phn" placeholder="Phone no" id="c" >
+  <br>
+
+          <b> Profession </b><br><input type="text" name="spec" placeholder="Profession" >
+   <br>
+
+     	    <b>Location  </b> <br><input type="text" name="loc" placeholder="Location" >
+  <br>
+
+ 		         <input type="file" name="photo" >
+  <br>
+
+    		<b>Name</b>   <br><input type="text" name="name" placeholder="Name" >
+  <br>
+
+      		<b>latitude</b>   <br><input type="text" name="lat" placeholder="Name"  id="ff" onclick="getLocation()">
+    <br>
+    <b>latitude</b>   <br><input type="text" name="log" placeholder="Name"  id="gg">
+<br>
+    		 <input type="submit" value="Submit" name="sub" >
+  <br>
+
+</form>
+<button>try</button>
+<script>
+
+
+function getLocation() {
+  console.log(2);
+    if (navigator.geolocation) {
+      console.log(5);
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        console.log("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+
+  document.getElementById("ff").value=position.coords.latitude;
+  document.getElementById("gg").value=position.coords.longitude;
+}
+</script>
+
+
+</body>
+
+</html>

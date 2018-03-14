@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema >
+
+<xs:element name="BussinessDirectory">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ShopName" type="xs:string"/>
+      <xs:element name="Category" type="xs:string"/>
+      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="Address" type="xs:string"/>
+      <xs:element name="DoorNo" type="xs:string"/>
+      <xs:element name="Street" type="xs:string"/>
+      <xs:element name="City" type="xs:string"/>
+      <xs:element name="PhNo" type="xs:integer"/>
+      <xs:element name="E-Mail" type="xs:string"/>
+      <xs:element name="WorkingHours" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

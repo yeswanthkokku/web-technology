@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BussinessDirectory SYSTEM "BD.dtd">
+<BussinessDirectory
+xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com/xml/BussinessDirectory.xsd>
+    <ShopName>
+       Virat Chemist And Drugist
+    </ShopName>
+    <Category>
+       Medical
+    </Category>
+    <Description>
+       All medicines are availible
+    </Description>
+    <Address>
+        <DoorNo> 8/96/23.0 </DoorNo>
+        <Street> Gandhi Nagar</Street>
+        <City>  Vizag </City>
+        <PhNo>  858958963 </PhNo>  
+    </Address>
+    <E-Mail>
+       viratcandd@gmail.com
+    </E-Mail>
+    <WorkingHours>
+       10AM to 9PM
+    </WorkingHours>
+</BussinessDirectory>
